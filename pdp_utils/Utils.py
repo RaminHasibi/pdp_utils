@@ -129,9 +129,9 @@ def feasibility_check(solution, problem):
             else:
                 LoadSize = 0
                 currentTime = 0
-                sortRout = np.sort(currentVPlan)
-                I = np.argsort(currentVPlan)
-                Indx = np.argsort(I)
+                sortRout = np.sort(currentVPlan, kind='mergesort')
+                I = np.argsort(currentVPlan, kind='mergesort')
+                Indx = np.argsort(I, kind='mergesort')
                 LoadSize -= Cargo[sortRout, 2]
                 LoadSize[::2] = Cargo[sortRout[::2], 2]
                 LoadSize = LoadSize[Indx]
@@ -204,9 +204,9 @@ def cost_function(Solution, problem):
             NotTransportCost = np.sum(Cargo[currentVPlan, 3]) / 2
         else:
             if NoDoubleCallOnVehicle > 0:
-                sortRout = np.sort(currentVPlan)
-                I = np.argsort(currentVPlan)
-                Indx = np.argsort(I)
+                sortRout = np.sort(currentVPlan, kind='mergesort')
+                I = np.argsort(currentVPlan, kind='mergesort')
+                Indx = np.argsort(I, kind='mergesort')
 
                 PortIndex = Cargo[sortRout, 1].astype(int)
                 PortIndex[::2] = Cargo[sortRout[::2], 0]

@@ -8,10 +8,9 @@ sol = [7, 7, 5, 5, 0, 2, 2, 0, 3, 4, 4, 3, 1, 1, 0, 6, 6]
 
 print(prob.keys())
 
+feasiblity, c = feasibility_check(sol, prob)
 
-feasiblity,c = feasibility_check(sol,prob)
-
-Cost = cost_function(sol,prob)
+Cost = cost_function(sol, prob)
 
 print(feasiblity)
 print(c)

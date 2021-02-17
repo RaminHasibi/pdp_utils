@@ -5,7 +5,7 @@ def pkg_setup():
     from setuptools import setup
 
     setup(name='pdp_utils',
-          version='.'.join(map(str, [1, 0, 0])),
+          version='.'.join(map(str, [1, 0, 1])),
           author="Ramin Hasibi",
           author_email="Ramin.Hasibi@uib.no",
           description='Utils needed for solving pickup and delivery problems for course INF273 UiB',
