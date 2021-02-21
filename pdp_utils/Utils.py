@@ -61,7 +61,7 @@ def load_problem(filename):
     VesselCargo = np.zeros((num_vehicles, num_calls + 1))
     B = np.array(B, dtype=object)
     for i in range(num_vehicles):
-        VesselCargo[i, np.array(B[i], dtype=np.int)] = 1
+        VesselCargo[i, np.array(B[i][1:], dtype=np.int)] = 1
     VesselCargo = VesselCargo[:, 1:]
 
     LoadingTime = np.zeros((num_vehicles + 1, num_calls + 1))
