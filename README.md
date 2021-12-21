@@ -38,7 +38,7 @@ feasible, log = feasibility_check(SOL, prob)
 
 print(log)
 ```
-### 4) You can check the cost function of a sulotion as below:
+### 4) You can check the cost function of a solution as below:
 ```bash
 from pdp_utils import cost_function
 
