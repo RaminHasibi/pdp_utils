@@ -1,26 +1,26 @@
-%  number of nodes
+% number of nodes
 39
-%  number of vehicles
+% number of vehicles
 3
-%  for each vehicle: vehicle index, home node, starting time, capacity
-1,8,125,13200
-2,13,106,13200
+% for each vehicle: vehicle index, home node, starting time, capacity
+1,8,0,13200
+2,13,0,13200
 3,31,0,16500
 % number of calls
 7
-%  for each vehicle, vehicle index, and then a list of calls that can be transported using that vehicle
-1,1,3,7
-2,1,3,7
-3,1,2,3,4,5,6,7
+% for each vehicle, vehicle index, and then a list of calls that can be transported using that vehicle
+1,2,3,4,5,7
+2,2,3,5,7
+3,1,2,3,5,6,7
 % for each call: call index, origin node, destination node, size, cost of not transporting, lowerbound timewindow for pickup, upper_timewindow for pickup, lowerbound timewindow for delivery, upper_timewindow for delivery
-1,17,37,4601,790000,345,417,345,1006
-2,33,36,13444,430790,96,168,96,529
-3,17,27,6596,200354,715,787,715,1089
-4,6,1,11052,275455,0,72,0,435
-5,38,33,6643,642740,107,179,107,593
-6,10,38,14139,587198,300,372,300,801
-7,26,6,5310,359885,178,250,178,567
-%  travel times and costs: vehicle, origin node, destination node, travel time (in hours), travel cost (in )
+1,29,27,1886,544593,0,72,0,555
+2,4,21,11587,418885,345,417,345,770
+3,11,14,5316,464760,288,360,288,756
+4,9,6,8705,376745,0,72,0,459
+5,36,11,10239,507429,159,231,159,616
+6,1,6,14168,262411,75,147,75,516
+7,10,37,10228,667802,336,408,336,838
+% travel times and costs: vehicle, origin node, destination node, travel time (in hours), travel cost (in Euro)
 1,1,1,0,0
 2,1,1,0,0
 3,1,1,0,0
@@ -4584,26 +4584,26 @@
 1,39,39,0,0
 2,39,39,0,0
 3,39,39,0,0
-%  node times and costs: vehicle, call, origin node time (in hours), origin node costs (in ), destination node time (in hours), destination node costs (in )
-1,1,13,23768,16,29040
-1,2,-1,-1,-1,-1
-1,3,17,23768,19,28042
-1,4,-1,-1,-1,-1
-1,5,-1,-1,-1,-1
+% node times and costs: vehicle, call, origin node time (in hours), origin node costs (in Euro), destination node time (in hours), destination node costs (in Euro)
+1,1,-1,-1,-1,-1
+1,2,29,26828,29,27933
+1,3,16,27178,18,30160
+1,4,22,24315,25,29828
+1,5,29,31108,26,27178
 1,6,-1,-1,-1,-1
-1,7,18,30200,18,29828
-2,1,13,23768,16,29040
-2,2,-1,-1,-1,-1
-2,3,17,23768,19,28042
+1,7,23,22243,27,29040
+2,1,-1,-1,-1,-1
+2,2,29,26828,29,27933
+2,3,16,27178,18,30160
 2,4,-1,-1,-1,-1
-2,5,-1,-1,-1,-1
+2,5,29,31108,26,27178
 2,6,-1,-1,-1,-1
-2,7,18,30200,18,29828
-3,1,13,25418,16,30690
-3,2,30,25440,35,32758
-3,3,17,25418,20,29692
-3,4,30,31478,31,33153
-3,5,22,33227,17,25440
-3,6,31,23893,37,33227
-3,7,18,31850,18,31478
+2,7,23,22243,27,29040
+3,1,6,24030,10,29692
+3,2,29,28478,30,29583
+3,3,16,28828,18,31810
+3,4,-1,-1,-1,-1
+3,5,29,32758,26,28828
+3,6,37,33153,36,31478
+3,7,23,23893,27,30690
 % EOF

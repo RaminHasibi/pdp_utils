@@ -4,7 +4,7 @@ from pdp_utils import *
 
 prob = load_problem('pdp_utils/data/pd_problem/Call_7_Vehicle_3.txt')
 
-sol = [7, 7, 5, 5, 0, 2, 2, 0, 3, 4, 4, 3, 1, 1, 0, 6, 6]
+sol = [0, 2, 2, 0, 1, 5, 5, 3, 1, 3, 0, 7, 4, 6, 7, 4, 6]
 
 print(prob.keys())
 
