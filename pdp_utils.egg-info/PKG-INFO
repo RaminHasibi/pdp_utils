@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: pdp_utils
+Version: 1.0.2
+Summary: Utils needed for solving pickup and delivery problems for course INF273 UiB
+Author: Ramin Hasibi
+Author-email: Ramin.Hasibi@uib.no
+Requires-Dist: numpy

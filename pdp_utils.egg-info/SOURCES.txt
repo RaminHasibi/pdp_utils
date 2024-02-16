@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+pdp_utils/Utils.py
+pdp_utils/__init__.py
+pdp_utils.egg-info/PKG-INFO
+pdp_utils.egg-info/SOURCES.txt
+pdp_utils.egg-info/dependency_links.txt
+pdp_utils.egg-info/requires.txt
+pdp_utils.egg-info/top_level.txt
